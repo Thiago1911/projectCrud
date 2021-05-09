@@ -26,7 +26,6 @@ function listAll(){
                     '<td>' + data[i].datahora + '/<td>' +
                  '/<tr>';
             tbodyList.innerHTML += tr;
-            tr = tbodyList.childNodes;
         }
     });
 }
