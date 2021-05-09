@@ -1,0 +1,16 @@
+html, body{
+    /*Reset do CSS*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo{
+    color: #0f0feb;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button{
+    margin: 0;
+}
