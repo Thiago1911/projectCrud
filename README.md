@@ -20,5 +20,4 @@ Utilizando métodp GET,PUT.
 
 
 ---
-Made by [Thiago_de_Paula_Fernandes]
-(https://github.com/Thiago1911)
+Made by [Thiago_de_Paula_Fernandes](https://github.com/Thiago1911)
