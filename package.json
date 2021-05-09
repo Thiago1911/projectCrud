@@ -1,0 +1,23 @@
+{
+  "name": "project-crud",
+  "version": "1.0.0",
+  "description": "Requisisões realizadas utilizando HTTP Axios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thiago1911/projectCrud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thiago1911/projectCrud/issues"
+  },
+  "homepage": "https://github.com/Thiago1911/projectCrud#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}

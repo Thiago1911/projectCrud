@@ -4,7 +4,7 @@
 Requisisões realizadas utilizando HTTP Axios
 
 
-Utilizando métodp GET,PUT.
+Utilizando método GET,PUT.
 
 
 ### Languages
