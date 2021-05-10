@@ -27,10 +27,33 @@ btnUpdate.onclick = ()=>{
         'fabricante': fab 
     };
 
-
-
-    api.put('produto/'+ codPro, data).then(resp=>{
-        console.log('Alteração realizada!')
-    }).catch(err => console.log('Erro ao realizar a alteração"'));
+    if (codPro == '') {
+        alert('Código vazio!');
+    } else {
+        api.put('produto/'+ codPro, data).then(resp=>{
+            console.log('Alteração realizada!')
+        }).catch(err => console.log('Erro ao realizar a alteração"'));
+    }
 
 }
+
+inpCod.addEventListener('keyup',()=>{
+    let codPro = inpCod.value;
+    api.get('produto/' + codPro).then(res=>{
+        const data = res.data;
+        console.log(data);
+
+        if (data == '') {
+            console.log('Registro não existe!');
+            inpNome.value = '';
+            inpDesc.value = '';
+            inpQtda.value = '';
+            inpFab.value = '';
+        }else{
+            inpNome.value = data[0].nome;
+            inpDesc.value = data[0].descri;
+            inpQtda.value = data[0].qtda;
+            inpFab.value = data[0].fabricante;
+        }
+    })
+})
